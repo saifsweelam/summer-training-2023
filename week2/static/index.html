@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="registrationForm" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <th><label for="userId">User ID:</label></th>
+                    <td>
+                        <input type="text" name="userId" id="userId">
+                        <span id="userIdError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password:</label></th>
+                    <td>
+                        <input type="password" name="password" id="password">
+                        <span id="passwordError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="name">Name:</label></th>
+                    <td>
+                        <input type="text" name="name" id="name">
+                        <span id="nameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="address">Address:</label></th>
+                    <td>
+                        <input type="text" name="address" id="address">
+                        <span id="addressError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="country">Country:</label></th>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="" selected hidden disabled>(Please select a country)</option>
+                            <option value="eg">Egypt</option>
+                            <option value="sa">Saudi Arabia</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                        <span id="countryError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="zipCode">ZIP Code:</label></th>
+                    <td>
+                        <input type="number" name="zipCode" id="zipCode">
+                        <span id="zipCodeError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td>
+                        <input type="email" name="email" id="email">
+                        <span id="emailError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label>Gender:</label></th>
+                    <td>
+                        <label><input type="radio" name="gender" id="maleRadio" value="male">Male</label>
+                        <label><input type="radio" name="gender" id="femaleRadio" value="female">Female</label>
+                        <span id="genderError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label>Language:</label></th>
+                    <td>
+                        <label><input type="checkbox" name="language" id="englishCheckbox" value="english">English</label>
+                        <label><input type="checkbox" name="language" id="nonEnglishCheckbox" value="nonEnglish">Non English</label>
+                        <span id="languageError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="about">About:</label></th>
+                    <td>
+                        <textarea name="About" id="about"></textarea>
+                        <span id="aboutError"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <script src="validation.js"></script>
+</body>
+</html>
